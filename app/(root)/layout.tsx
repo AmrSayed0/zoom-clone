@@ -1,15 +1,13 @@
-import Navbar from "@/components/Navbar";
+import { ReactNode } from "react";
 
-interface layoutProps {
-  children: React.ReactNode;
-}
+import StreamVideoProvider from "@/providers/StreamClientProvider";
 
-const RootLayout = ({ children }: layoutProps) => {
+const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <main>
-      <Navbar />
-      {children}
+      <StreamVideoProvider>{children}</StreamVideoProvider>
     </main>
   );
 };
+
 export default RootLayout;
