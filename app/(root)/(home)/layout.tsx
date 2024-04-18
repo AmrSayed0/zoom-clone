@@ -1,5 +1,12 @@
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Zoom",
+  description: "A Zoom clone built with Stream's Video SDK and Next.js",
+  icons: "/icons/logo.svg",
+};
 
 interface layoutProps {
   children: React.ReactNode;
