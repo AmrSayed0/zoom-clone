@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 "use client";
 
 import { useState } from "react";
@@ -77,20 +78,19 @@ const MeetingTypeList = () => {
         className="bg-orange-1"
         handleClick={() => setMeetingState("isInstantMeeting")}
       />
-
-      <HomeCard
-        img="/icons/schedule.svg"
-        title="Schedule Meeting"
-        description="Plan your meeting"
-        className="bg-purple-1"
-        handleClick={() => setMeetingState("isScheduleMeeting")}
-      />
       <HomeCard
         img="/icons/join-meeting.svg"
         title="Join Meeting"
         description="via invitation link"
         className="bg-blue-1"
         handleClick={() => setMeetingState("isJoiningMeeting")}
+      />
+      <HomeCard
+        img="/icons/schedule.svg"
+        title="Schedule Meeting"
+        description="Plan your meeting"
+        className="bg-purple-1"
+        handleClick={() => setMeetingState("isScheduleMeeting")}
       />
       <HomeCard
         img="/icons/recordings.svg"
